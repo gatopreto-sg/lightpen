@@ -1,1 +1,4 @@
-<p>leftsidebar works!</p>
+<div id="notelist" class="w-80 border-r h-full flex flex-col">
+    <app-note *ngFor="let note of notes" [note]="note" />
+    <app-new-note/>
+</div>
