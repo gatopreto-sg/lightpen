@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { Note } from './note';
 import { NoteComponent } from './components/note/note.component';
 import { LeftsidebarComponent } from './components/leftsidebar/leftsidebar.component';
+import { TextpanelComponent } from './components/textpanel/textpanel.component';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,8 @@ import { LeftsidebarComponent } from './components/leftsidebar/leftsidebar.compo
   imports: [
     RouterOutlet,
     NoteComponent,
-    LeftsidebarComponent
+    LeftsidebarComponent,
+    TextpanelComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

@@ -5,6 +5,7 @@ import { Note } from '../../note';
   providedIn: 'root'
 })
 export class NotesService {
+  actual: Note = {"id":0, "title":"Isso não é uma nota de verdade!", "content":"não é mesmo!", "starred":false, "trashed":false};
 
   get_notes(): Note[] {
     return [
@@ -31,6 +32,12 @@ export class NotesService {
       },
     ]
   }
+
+  setActual(note:Note) {
+    this.actual = note;
+  }
+
+
 
   constructor() { }
 }
